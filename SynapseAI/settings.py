@@ -38,21 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cloudinary',
-    'storages',
     'homepage',
     'ocr',
 ]
-
-# Cloudinary settings
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dlpjqofyf',  # Replace with your cloud name
-    'API_KEY': '434666296953325',        # Replace with your API key
-    'API_SECRET': 'GdMcVBs4AfYHtZE0mQ7czeG0usc',  # Replace with your API secret
-}
-
-# Set the default file storage backend to Cloudinary
-DEFAULT_FILE_STORAGE = 'cloudinary.storage.MediaCloudinaryStorage'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -131,7 +119,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-MEDIA_URL = 'https://res.cloudinary.com/dlpjqofyf/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
