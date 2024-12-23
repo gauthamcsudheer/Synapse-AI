@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynapseAI - Where AI Meets Education</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(180deg, #ecfdf5 0%, #ffffff 100%);
+            padding: 6rem 1rem 3rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: #059669;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #4b5563;
+            max-width: 50rem;
+            margin: 0 auto 2rem;
+        }
+
+        .button {
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .button-primary {
+            background: #059669;
+            color: white;
+            border: none;
+        }
+
+        .button-primary:hover {
+            background: #047857;
+        }
+
+        .button-secondary {
+            border: 2px solid #059669;
+            color: #059669;
+            background: transparent;
+        }
+
+        .button-secondary:hover {
+            background: #ecfdf5;
+        }
+
+        /* Features section */
+        .features {
+            padding: 0rem 1rem 6rem;
+            background: white;
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .features-header h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .features-header p {
+            color: #4b5563;
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            background: #ecfdf5;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .feature-icon i {
+            color: #059669;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: #4b5563;
+        }
+
+        /* Vision section */
+        .vision {
+            background: #ecfdf5;
+            padding: 6rem 1rem;
+        }
+
+        .vision-container {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .vision-content {
+            flex: 1;
+        }
+
+        .vision-icon {
+            width: 3rem;
+            height: 3rem;
+            color: #059669;
+            margin-bottom: 1.5rem;
+        }
+
+        .vision h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .vision p {
+            color: #4b5563;
+            font-size: 1.125rem;
+        }
+
+        .vision-image {
+            flex: 1;
+        }
+
+        .vision-image img {
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .vision-container {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1><span>Synapse</span> : Where AI Meets Education</h1>
+            <p>Transform your learning experience with our AI-powered platform that converts text images into interactive, searchable digital content.</p>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2>Key Features</h2>
+                <p>Discover how SynapseAI transforms your educational experience with powerful features.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3>OCR-Powered Text Extraction</h3>
+                    <p>Convert text images into editable digital notes instantly with advanced OCR technology.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3>AI-Powered Chatbot</h3>
+                    <p>Interact with your notes naturally, get answers, summaries, and organized content.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="languages"></i>
+                    </div>
+                    <h3>Multilingual Support</h3>
+                    <p>Break language barriers with built-in translation capabilities across multiple languages.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="mic"></i>
+                    </div>
+                    <h3>Speech Integration</h3>
+                    <p>Enhanced learning with seamless speech-to-text and text-to-speech features.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vision">
+        <div class="container">
+            <div class="vision-container">
+                <div class="vision-content">
+                    <i class="vision-icon" data-lucide="target"></i>
+                    <h2>Our Vision</h2>
+                    <p>SynapseAI aims to bridge educational gaps and promote inclusive learning through innovative AI technology. We're building a future where quality education is accessible, adaptable, and engaging for everyone.</p>
+                </div>
+                <div class="vision-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80" alt="Students collaborating">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
