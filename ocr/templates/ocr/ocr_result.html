@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+</head>
+<body>
+    <h1>OCR Result</h1>
+    <p>Uploaded Image:</p>
+    <img src="{{ file_path }}" alt="Uploaded Image" style="max-width: 400px; max-height: 400px;">
+    <h2>Extracted Text:</h2>
+    <p>{{ extracted_text }}</p>
+    <a href="{% url 'ocr:upload' %}">Try another image</a>
+</body>
+</html>
